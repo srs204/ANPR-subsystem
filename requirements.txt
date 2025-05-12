@@ -1,0 +1,38 @@
+# requirements.txt for Vehicle & License Plate Detection
+# (Ubuntu 22.04, Jetson Orin Nano with JetPack 6.2)
+
+# ─────────── PyTorch & TorchVision ───────────
+# Install these using NVIDIA’s JetPack-specific wheels:
+# pip install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v66 \
+#     torch==2.0.1+cu118 torchvision==0.15.2+cu118
+
+torch==2.0.1+cu118
+torchvision==0.15.2+cu118
+
+# ───────────── Core Computer‐Vision ─────────────
+ultralytics>=8.0.0,<9.0.0
+opencv-python>=4.7.0.68
+
+# ─────────────── Data Handling ───────────────
+numpy>=1.23.5
+pandas>=1.5.3
+
+# ───────────── Environment & Config ─────────────
+python-dotenv>=1.0.0
+pytz>=2023.3
+
+# ───────────── Database Connector ─────────────
+mysql-connector-python>=8.0.33
+
+# ─────────── OCR/ALPR Engine ───────────
+openalpr>=1.2.0
+
+
+'''
+# 1. First, install core OS libs (if you haven’t already):
+sudo apt update
+sudo apt install -y libopenalpr-dev libleptonica-dev pkg-config
+
+# 2. Install Python deps:
+pip3 install -r requirements.txt
+'''
