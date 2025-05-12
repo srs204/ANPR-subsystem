@@ -5,6 +5,12 @@ An automatic license plate recognition model for parking lots, deployed on edge 
 When deployed, it gives the parking lot owner the ability to view the entry and exit of individual cars through an app, differentiated by their license plates and timestamps
 This can be particularly helpful to audit, maintain logs, analyze patterns, adjust price models, promotions, and automate ticketing and tolling for the parking lot owner
 
+# Usage
+The model and all of its dependencies are tested on a Jetson Orin Nano running on Jetpack 6.2 SDK (Ubuntu 22.04)
+The user is expected to configure a virtual environment and have all the libraries and dependencies installed in their host system as specified by the requirements.txt
+
+# Connection
+
 # Model
 local.py runs the inference on a local path, and camerainfr.py uses the Jetson's camera input port 0/1 to open a camera module and run the inference in real-time
 Both of the models use yolo11n.pt model developed by Ultralytics to identify the vehicle frame, on which the open source library openalpr is used to identify license plate numbers
