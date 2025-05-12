@@ -1,0 +1,3 @@
+pycryptodome
+pyotp
+qrcode[pil]
