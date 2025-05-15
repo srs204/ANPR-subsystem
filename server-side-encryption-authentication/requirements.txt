@@ -1,0 +1,18 @@
+# Cryptography
+pycryptodome>=3.10
+
+# MFA and QR Code
+pyotp>=2.8.0
+qrcode[pil]>=7.3.1
+pillow>=8.0.0
+
+# Environment Variable Management
+python-dotenv>=1.0.0
+
+# GUI Framework with Theming
+ttkbootstrap==0.5.3
+
+# SQLite is built-in, but GUI tool can be noted (optional)
+# sqlite3 is part of the Python standard library (no pip install needed)
+# sqlitebrowser is a desktop app and not installable via pip
+
