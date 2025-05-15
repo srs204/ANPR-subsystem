@@ -1,5 +1,0 @@
-pycryptodome
-pyotp
-qrcode[pil]
-sqlite3
-sqlitebrowser
